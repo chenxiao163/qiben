@@ -7,7 +7,6 @@
         </div>
         <div class="title-list">
           <router-link to="/">首页</router-link>
-          <router-link to="/Project">项目套餐</router-link>
           <router-link to="/Business">业务领域</router-link>
           <router-link to="/Coachingteam">辅导团队</router-link>
           <router-link to="/Aboutus">关于我们</router-link>
