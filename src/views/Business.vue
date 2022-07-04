@@ -10,15 +10,15 @@
 }
 .Business-body{
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 .Business-list{
   position: relative;
   top: 50%;
   left: 20%;
   transform: translate(-50%,-50%);
-  width: 300px;
-  height: 300px;
+  width: 230px;
+  height: 230px;
   margin: 0 auto;
   display: inline-block;
 }

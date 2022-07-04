@@ -2,17 +2,20 @@
   .Coachingteam{
     position: relative;
   }
+  .Coachingteam img{
+    width: 100%;
+  }
   .Coachingteam-mian{
-    width: 830px;
-    height: 545px;
+    width: 630px;
+    height: 445px;
     position: absolute;
-    top: 150px;
+    top:100px;
     left: 50%;
     transform: translate(-50%);
   }
   .el-carousel__item{
-    width: 413px;
-    height: 545px;
+    width: 313px;
+    height: 445px;
   }
   .el-carousel__item h3 {
     color: #475669;
@@ -26,12 +29,6 @@
     top: 0;
     left: 50%;
     transform: translate(-50%);
-  }
-  .el-carousel__item:nth-child(2n) {
-  }
-  
-  .el-carousel__item:nth-child(2n+1) {
-    
   }
 </style>
 <template>

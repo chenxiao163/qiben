@@ -12,7 +12,7 @@ html{
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
-}
+} 
 .changeGo{
   min-width: none;
   min-height: none;
@@ -22,6 +22,12 @@ html{
   transform: translate(-50%);
   z-index: 10;
 }
+.changeGo img{
+  width: 180px;
+  height: 55px;
+  min-width: 150px;
+  min-height: 54px;
+}
 .home-list-title{
   position: absolute;
   top: 20px;
@@ -30,7 +36,7 @@ html{
 }
 .footer{
   background-color:#f4a23f;
-  min-height: 350px;
+  min-height: 313px;
   min-width: 100%;
   position: absolute;
   bottom: 0;
@@ -248,13 +254,16 @@ html{
   .mero-right-list{
     margin-top: 10px;
   }
+  .block{
+    height: 487px;
+  }
 </style>
 <template>
   <div class="Home">
     <div class="block" style="margin-top:-30px;">
-    <el-carousel height="495px">
+    <el-carousel height="395px">
       <el-carousel-item v-for="(item,index) in typeOpiton" :key="index">
-        <img :src="item.img" alt="">
+        <img :src="item.img" style="height:395px" alt="">
       </el-carousel-item>
     </el-carousel>
   </div>
