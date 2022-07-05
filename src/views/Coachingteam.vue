@@ -43,6 +43,7 @@
           <img :src="item.img" alt="">
         </el-carousel-item>
       </el-carousel>
+       <!-- 12312312312 -->
     </div>
   </div>
 </template>
