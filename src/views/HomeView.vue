@@ -257,6 +257,10 @@ html{
   .block{
     height: 570px;
   }
+  .el-carousel__item{
+    width: 100%;
+    height: 570px;
+  }
 </style>
 <template>
   <div class="Home">
