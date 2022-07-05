@@ -36,10 +36,9 @@ html{
 }
 .footer{
   background-color:#f4a23f;
-  min-height: 313px;
+  min-height: 400px;
   min-width: 100%;
-  position: absolute;
-  bottom: 0;
+  position: relative;
 }
 .Home-main{
   height:200px;
@@ -256,15 +255,15 @@ html{
     margin-top: 10px;
   }
   .block{
-    height: 395px;
+    height: 570px;
   }
 </style>
 <template>
   <div class="Home">
     <div class="block" style="margin-top:-30px;">
-    <el-carousel height="395px">
+    <el-carousel height="570px">
       <el-carousel-item v-for="(item,index) in typeOpiton" :key="index">
-        <img :src="item.img" style="height:100%;width:100%;" alt="">
+        <img :src="item.img" style=";width:100%;" alt="">
       </el-carousel-item>
     </el-carousel>
   </div>

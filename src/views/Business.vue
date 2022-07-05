@@ -8,18 +8,11 @@
   justify-content:center;
   background-color: #f4a23f;
 }
-.Business-body{
-  width: 100%;
-  height: 500px;
-}
 .Business-list{
   position: relative;
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%,-50%);
-  width: 230px;
-  height: 230px;
-  margin: 0 auto;
+  top: 300px;
+  width: 180px;
+  height: 80px;
   display: inline-block;
 }
 .Business-list img{
@@ -39,10 +32,9 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  margin: -115px 0px;
 }
-.Business-list .title-list{
-  margin-top: 20px;
-}
+
 .Business-list .title-list div{
   width: 150px;
   margin-top: 20px;
@@ -103,7 +95,8 @@
 </style>
 <template>
   <div class="Business">
-    <div class="Business-body">
+    <div class="Business-main">
+          <div class="Business-body">
       <div @click="aaa(item)" class="Business-list" v-for="item,index in businessList" :key="index">
           <img :src="item.img" alt="" >
           <div class="title-list">
@@ -146,6 +139,8 @@
         <img src="../assets/home/关闭.png" alt="">
       </div>
     </div>
+    </div>
+
   </div>
 </template>
 
