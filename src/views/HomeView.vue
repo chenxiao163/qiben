@@ -129,7 +129,7 @@ html{
     transform: translate(-50%);
   }
   .mian-box-list{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -145,6 +145,7 @@ html{
     text-align: center;
     line-height: 40px;
     border:1px solid #f4a23f;
+    font-size: 14px;
   }
   .more{
     z-index: 10;
@@ -185,7 +186,7 @@ html{
     text-align: center;
     line-height: 150px;
     color: #f4a23f;
-    font-size: 24px;
+    font-size: 20px;
   }
   .type-list-top-right{
     border: 2px solid #f4a23f;
@@ -255,7 +256,7 @@ html{
     margin-top: 10px;
   }
   .block{
-    height: 487px;
+    height: 395px;
   }
 </style>
 <template>
@@ -263,7 +264,7 @@ html{
     <div class="block" style="margin-top:-30px;">
     <el-carousel height="395px">
       <el-carousel-item v-for="(item,index) in typeOpiton" :key="index">
-        <img :src="item.img" style="height:395px" alt="">
+        <img :src="item.img" style="height:100%;width:100%;" alt="">
       </el-carousel-item>
     </el-carousel>
   </div>
