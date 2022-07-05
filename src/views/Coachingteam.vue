@@ -19,10 +19,6 @@
   }
   .el-carousel__item h3 {
     color: #475669;
-    font-size: 14px;
-    opacity: 0.75;
-    line-height: 200px;
-    margin: 0;
   }
   .Coachingteam-title{
     position: absolute;
