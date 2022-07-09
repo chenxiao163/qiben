@@ -3,6 +3,7 @@
     width: 100%;
     height: 80%;
     position: relative;
+    font-family:"Microsoft YaHei",
   }
   .aboutus-title{
     position: absolute;
@@ -17,6 +18,7 @@
     top: 150px;
     left: 50%;
     transform: translate(-50%);
+    font-family:"Microsoft YaHei"
   }
   .aboutus-mian{
     width: 100%;
@@ -39,6 +41,7 @@
   }
   .aboutus-box-mian{
     margin-top: 60px;
+    font-family:"Microsoft YaHei"
   }
 </style>
 <template>

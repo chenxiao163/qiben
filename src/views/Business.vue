@@ -55,6 +55,17 @@
   left: 50%;
   transform: translate(-50%);
 }
+.main-box{
+  background:rgba(255, 255, 255, 0.9)!important;
+  z-index: 10;
+  width: 80%;
+  min-width: 80%;
+  height: 400px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
 .main-box img{
   width: 80%;
   position: absolute;
@@ -69,32 +80,65 @@
   left: 190%;
   top: 40px;
 }
-.mian-box-list{
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%);
-}
-.mian-box-list .list{
-  color: #FAA830;
-  width: 22%;
-  height: 40px;
-  margin: 10px 15px;
-  text-align: center;
-  line-height: 40px;
-  border:1px solid #FAA830;
-}
-.main-box-title{
-  font-size: 24px;
-  color: #FAA830;
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translate(-50%);
-}
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 150px;
+    margin: 0;
+  }
+  .el-carousel__item:nth-child(2n) {
+     background-color: #99a9bf;
+  }
+  .el-carousel__item:nth-child(2n+1) {
+     background-color: #d3dce6;
+  }
+  .go{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 20;
+  }
+  .change-close{
+    position: absolute;
+    top: 240px;
+    right: 180px;
+    z-index: 20;
+  }
+  .change-close img{
+    width: 30px;
+    height: 30px;
+  }
+  .main-box-title{
+    font-size:32px;
+    color: #FAA830;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .mian-box-list{
+    width: 88%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+    color: #fff;
+  }
+  .mian-box-list .list{
+    color: #FAA830;
+    width: 300px;
+    height: 80px;
+    margin: 10px 15px;
+    text-align: center;
+    line-height: 80px;
+    border:1px solid #FAA830;
+    font-size: 18px;
+  }
 </style>
 <template>
   <div class="Business">

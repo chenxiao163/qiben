@@ -25,7 +25,7 @@
   padding: 0;
 }
 html{
-  font-family:"Microsoft YaHei",
+  font-family:"Microsoft YaHei"
 }
 .app-list{
   -webkit-font-smoothing: antialiased;

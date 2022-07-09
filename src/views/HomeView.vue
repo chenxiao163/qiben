@@ -17,7 +17,7 @@ html{
   min-width: none;
   min-height: none;
   position: absolute;
-  top: 408px;
+  top: 458px;
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
@@ -100,11 +100,9 @@ html{
     line-height: 150px;
     margin: 0;
   }
-
   .el-carousel__item:nth-child(2n) {
      background-color: #99a9bf;
   }
-  
   .el-carousel__item:nth-child(2n+1) {
      background-color: #d3dce6;
   }
@@ -126,7 +124,7 @@ html{
     height: 30px;
   }
   .main-box-title{
-    font-size: 24px;
+    font-size: 32px;
     color: #FAA830;
     position: absolute;
     top: 50px;
@@ -134,7 +132,7 @@ html{
     transform: translate(-50%);
   }
   .mian-box-list{
-    width: 100%;
+    width: 88%;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -143,22 +141,21 @@ html{
     transform: translate(-50%);
     font-size: 18px;
     color: #fff;
-
   }
   .mian-box-list .list{
     color: #FAA830;
-    width: 22%;
-    height: 40px;
+    width: 300px;
+    height: 80px;
     margin: 10px 15px;
     text-align: center;
-    line-height: 40px;
+    line-height: 80px;
     border:1px solid #FAA830;
-    font-size: 14px;
+    font-size: 18px;
   }
   .more{
     z-index: 10;
-    width: 80%;
-    height: 550px;
+    width: 1722px;
+    height: 415px;
     background:rgba(255, 255, 255, 0.9)!important;
     position: fixed;
     top: 300px;
@@ -166,7 +163,7 @@ html{
     transform: translate(-50%);
   }
   .more-box-title{
-    font-size: 24px;
+    font-size: 32px;
     color: #FAA830;
     position: absolute;
     top: 50px;
@@ -186,65 +183,65 @@ html{
   .type-list-top-left{
     border: 2px solid #FAA830;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     position: absolute;
     top: 100px;
-    left: 150px;
+    left: 300px;
     text-align: center;
-    line-height: 150px;
+    line-height: 130px;
     color: #FAA830;
     font-size: 20px;
   }
   .type-list-top-right{
     border: 2px solid #FAA830;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     position: absolute;
     top: 100px;
-    left: 350px;
+    left: 500px;
     text-align: center;
-    line-height: 150px;
+    line-height: 130px;
     color: #FAA830;
     font-size: 24px;
   }
   .type-list-bm-left{
     border: 2px solid #FAA830;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     position: absolute;
     top: 250px;
-    left: 50px;
+    left: 200px;
     text-align: center;
-    line-height: 150px;
+    line-height: 130px;
     color: #FAA830;
     font-size: 24px;
   }
   .type-list-bm-cn{
     border: 2px solid #FAA830;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     position: absolute;
     top: 250px;
-    left: 250px;
+    left: 400px;
     text-align: center;
-    line-height: 150px;
+    line-height: 130px;
     color: #FAA830;
     font-size: 24px;
   }
   .type-list-bm-right{
     border: 2px solid #FAA830;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     position: absolute;
     top: 250px;
-    left: 450px;
+    left: 600px;
     text-align: center;
-    line-height: 150px;
+    line-height: 130px;
     color: #FAA830;
     font-size: 24px;
   }
@@ -253,11 +250,11 @@ html{
     height: 300px;
     position: absolute;
     top: 30%;
-    left: 55%;
+    left: 60%;
     color: #FAA830;
   }
   .mero-right-list-title{
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
   .mero-right-list{
