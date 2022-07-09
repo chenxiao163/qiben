@@ -6,7 +6,7 @@
   height: 100vh;
   display:flex;
   justify-content:center;
-  background-color: #f4a23f;
+  background-color: #FAA830;
 }
 .Business-list{
   position: relative;
@@ -22,6 +22,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+.title-list{
+  font-size: 18px;
+  color: #fff;
 }
 .Business-list .title-list{
   position: absolute;
@@ -39,7 +43,6 @@
   width: 150px;
   margin-top: 20px;
   margin-right: 50px;
-  font-size: 16px;
 }
 .main-box{
   background:rgba(255, 255, 255, 0.9)!important;
@@ -76,17 +79,17 @@
   transform: translate(-50%);
 }
 .mian-box-list .list{
-  color: #f4a23f;
+  color: #FAA830;
   width: 22%;
   height: 40px;
   margin: 10px 15px;
   text-align: center;
   line-height: 40px;
-  border:1px solid #f4a23f;
+  border:1px solid #FAA830;
 }
 .main-box-title{
   font-size: 24px;
-  color: #f4a23f;
+  color: #FAA830;
   position: absolute;
   top: 50px;
   left: 50%;

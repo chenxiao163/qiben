@@ -71,7 +71,7 @@ ul>li{
 .more{
   width: 100%;
   height: 890px;
-  background: #f4a23f;
+  background: #FAA830;
   margin-top: -30px;
   position: relative;
 }

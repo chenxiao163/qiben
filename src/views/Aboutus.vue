@@ -32,7 +32,7 @@
     width: 45%;
     height: 230px;
     margin: 10px 10px;
-    background-color: #f4a23f;
+    background-color: #FAA830;
     text-align: center;
     font-size: 20px;
     color: #fff;

@@ -40,7 +40,7 @@ export default {
   color: #fff;
 }
 .Hearthealth-list{
-  color: #f4a23f;
+  color: #FAA830;
   font-size: 24px;
   font-weight: 900;
   width: 500px;

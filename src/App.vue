@@ -25,16 +25,14 @@
   padding: 0;
 }
 html{
-  width: 100%;
-  height: 100%;
+  font-family:"Microsoft YaHei",
 }
 .app-list{
-  width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .icon-left img{
-  margin:-20px 20%;
+  margin:-20px 280px;
 }
 .icon-left{
   width: 50%;
@@ -43,6 +41,7 @@ html{
 .title-list{
   width: 50%;
   float: left;
+  font-size: 16px;
 }
 nav {
   width: 100%;
@@ -50,22 +49,19 @@ nav {
 }
 
 nav a {
-  font-weight: bold;
-  color: #2c3e50;
   text-decoration:none;
-  font-size: 18px;
-  margin: 0 40px;
-  color:#f4a23f;
+  font-size: 16px;
+  margin: 0 60px;
+  color:#FAA830;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
 }
 .Scribe{
   width: 100%;
   height: 1px;
-  background-color: #f4a23f;
-  border: 1px solid #f4a23f;
+  background-color: #FAA830;
+  border: 1px solid #FAA830;
   margin: 20px 0px;
 }
 </style>

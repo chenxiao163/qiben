@@ -8,7 +8,7 @@ html{
   min-width: 842px;
   min-height: 147px;
   position: absolute;
-  top: 130px;
+  top: 150px;
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
@@ -17,7 +17,7 @@ html{
   min-width: none;
   min-height: none;
   position: absolute;
-  top: 400px;
+  top: 408px;
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
@@ -30,12 +30,12 @@ html{
 }
 .home-list-title{
   position: absolute;
-  top: 20px;
+  top: 80px;
   left: 50%;
   transform: translate(-50%);
 }
 .footer{
-  background-color:#f4a23f;
+  background-color:#FAA830;
   min-height: 400px;
   min-width: 100%;
   position: relative;
@@ -44,9 +44,11 @@ html{
   height:200px;
   display: flex;
   position: absolute;
-  top: 150px;
+  top: 216px;
   left: 50%;
   transform: translate(-50%);
+  font-size: 18px;
+  color: #fff;
 }
 .Home-list-main{
   /* position: absolute;
@@ -61,6 +63,10 @@ html{
 .Home-list .img-list{
   width: 70px;
   height: 70px;
+}
+.img-list div{
+  font-size: 18px;
+  color: #fff;
 }
 .main-box{
   background:rgba(255, 255, 255, 0.9)!important;
@@ -121,7 +127,7 @@ html{
   }
   .main-box-title{
     font-size: 24px;
-    color: #f4a23f;
+    color: #FAA830;
     position: absolute;
     top: 50px;
     left: 50%;
@@ -135,15 +141,18 @@ html{
     top: 40%;
     left: 50%;
     transform: translate(-50%);
+    font-size: 18px;
+    color: #fff;
+
   }
   .mian-box-list .list{
-    color: #f4a23f;
+    color: #FAA830;
     width: 22%;
     height: 40px;
     margin: 10px 15px;
     text-align: center;
     line-height: 40px;
-    border:1px solid #f4a23f;
+    border:1px solid #FAA830;
     font-size: 14px;
   }
   .more{
@@ -158,7 +167,7 @@ html{
   }
   .more-box-title{
     font-size: 24px;
-    color: #f4a23f;
+    color: #FAA830;
     position: absolute;
     top: 50px;
     left: 50%;
@@ -175,7 +184,7 @@ html{
     float: right;
   }
   .type-list-top-left{
-    border: 2px solid #f4a23f;
+    border: 2px solid #FAA830;
     border-radius: 50%;
     height: 150px;
     width: 150px;
@@ -184,11 +193,11 @@ html{
     left: 150px;
     text-align: center;
     line-height: 150px;
-    color: #f4a23f;
+    color: #FAA830;
     font-size: 20px;
   }
   .type-list-top-right{
-    border: 2px solid #f4a23f;
+    border: 2px solid #FAA830;
     border-radius: 50%;
     height: 150px;
     width: 150px;
@@ -197,11 +206,11 @@ html{
     left: 350px;
     text-align: center;
     line-height: 150px;
-    color: #f4a23f;
+    color: #FAA830;
     font-size: 24px;
   }
   .type-list-bm-left{
-    border: 2px solid #f4a23f;
+    border: 2px solid #FAA830;
     border-radius: 50%;
     height: 150px;
     width: 150px;
@@ -210,11 +219,11 @@ html{
     left: 50px;
     text-align: center;
     line-height: 150px;
-    color: #f4a23f;
+    color: #FAA830;
     font-size: 24px;
   }
   .type-list-bm-cn{
-    border: 2px solid #f4a23f;
+    border: 2px solid #FAA830;
     border-radius: 50%;
     height: 150px;
     width: 150px;
@@ -223,11 +232,11 @@ html{
     left: 250px;
     text-align: center;
     line-height: 150px;
-    color: #f4a23f;
+    color: #FAA830;
     font-size: 24px;
   }
   .type-list-bm-right{
-    border: 2px solid #f4a23f;
+    border: 2px solid #FAA830;
     border-radius: 50%;
     height: 150px;
     width: 150px;
@@ -236,7 +245,7 @@ html{
     left: 450px;
     text-align: center;
     line-height: 150px;
-    color: #f4a23f;
+    color: #FAA830;
     font-size: 24px;
   }
   .mero-right-box{
@@ -245,7 +254,7 @@ html{
     position: absolute;
     top: 30%;
     left: 55%;
-    color: #f4a23f;
+    color: #FAA830;
   }
   .mero-right-list-title{
     font-size: 20px;
@@ -293,7 +302,7 @@ html{
         <div class="Home-list-main" v-for="(item,index) in homelist" :key="index">
           <div class="Home-list" @click="aaa(item)">
             <img :src="item.img" alt="" class="img-list">
-            <div style="margin:10px -10px">{{item.data}}</div>
+            <div style="margin:10px -20px">{{item.data}}</div>
           </div>
         </div>
       </div>
