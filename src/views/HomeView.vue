@@ -74,7 +74,7 @@ html{
   width: 80%;
   min-width: 80%;
   height: 400px;
-  position: absolute;
+  position: fixed;
   bottom: 50px;
   left: 50%;
   transform: translate(-50%);
@@ -159,7 +159,7 @@ html{
     background:rgba(255, 255, 255, 0.9)!important;
     position: fixed;
     top: 300px;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%);
   }
   .more-box-title{
