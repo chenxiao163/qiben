@@ -108,7 +108,7 @@
     transform: translate(-50%);
   }
   .mian-box-list{
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -120,7 +120,7 @@
   }
   .mian-box-list .list{
     color: #FAA830;
-    width: 260px;
+    width: 210px;
     height: 60px;
     margin: 10px 15px;
     text-align: center;
