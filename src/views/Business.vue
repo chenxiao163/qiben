@@ -126,7 +126,7 @@
     text-align: center;
     line-height: 60px;
     border:1px solid #FAA830;
-    font-size: 16px;
+    font-size: 12px;
   }
 </style>
 <template>

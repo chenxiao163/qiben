@@ -150,7 +150,7 @@ html{
     text-align: center;
     line-height: 60px;
     border:1px solid #FAA830;
-    font-size: 16px;
+    font-size: 12px;
   }
   .more{
     z-index: 10;
@@ -187,7 +187,7 @@ html{
     width: 130px;
     position: absolute;
     top: 100px;
-    left: 300px;
+    left: 180px;
     text-align: center;
     line-height: 130px;
     color: #FAA830;
@@ -200,7 +200,7 @@ html{
     width: 130px;
     position: absolute;
     top: 100px;
-    left: 500px;
+    left: 330px;
     text-align: center;
     line-height: 130px;
     color: #FAA830;
@@ -213,7 +213,7 @@ html{
     width: 130px;
     position: absolute;
     top: 250px;
-    left: 200px;
+    left: 100px;
     text-align: center;
     line-height: 130px;
     color: #FAA830;
@@ -226,7 +226,7 @@ html{
     width: 130px;
     position: absolute;
     top: 250px;
-    left: 400px;
+    left: 250px;
     text-align: center;
     line-height: 130px;
     color: #FAA830;
@@ -239,7 +239,7 @@ html{
     width: 130px;
     position: absolute;
     top: 250px;
-    left: 600px;
+    left: 400px;
     text-align: center;
     line-height: 130px;
     color: #FAA830;
