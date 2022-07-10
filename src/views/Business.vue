@@ -51,18 +51,7 @@
   min-width: 80%;
   height: 400px;
   position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%);
-}
-.main-box{
-  background:rgba(255, 255, 255, 0.9)!important;
-  z-index: 10;
-  width: 80%;
-  min-width: 80%;
-  height: 400px;
-  position: absolute;
-  bottom: 50px;
+  top: 30%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -119,7 +108,7 @@
     transform: translate(-50%);
   }
   .mian-box-list{
-    width: 88%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -131,13 +120,13 @@
   }
   .mian-box-list .list{
     color: #FAA830;
-    width: 300px;
-    height: 80px;
+    width: 260px;
+    height: 60px;
     margin: 10px 15px;
     text-align: center;
-    line-height: 80px;
+    line-height: 60px;
     border:1px solid #FAA830;
-    font-size: 18px;
+    font-size: 16px;
   }
 </style>
 <template>
