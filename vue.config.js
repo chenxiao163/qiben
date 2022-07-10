@@ -1,7 +1,15 @@
 const { defineConfig } = require('@vue/cli-service')
 const FileManagerPlugin = require("filemanager-webpack-plugin"); //引入
 const packageName = 'dist'
+
+const px2rem = require('postcss-px2rem')
 var path = require('path')
+
+const postcss = px2rem({
+  // 基准大小 baseSize，需要和rem.js中相同
+  remUnit: 16
+})
+
 module.exports = {
   productionSourceMap: false,
   outputDir: packageName, // 包名，我这里将他提取成了一个常量
@@ -16,6 +24,15 @@ module.exports = {
         ws: true,
         pathRewrite: {
           "^/api": ""
+        }
+      }
+    },
+    css: {
+      loaderOptions: {
+        postcss: {
+          plugins: [
+            postcss
+          ]
         }
       }
     }
