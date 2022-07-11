@@ -1,3 +1,4 @@
+"use strict"
 const { defineConfig } = require('@vue/cli-service')
 const FileManagerPlugin = require("filemanager-webpack-plugin"); //引入
 const packageName = 'dist'

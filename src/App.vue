@@ -32,7 +32,7 @@ html{
   -moz-osx-font-smoothing: grayscale;
 }
 .icon-left img{
-  margin:-20px 280px;
+  margin: -20px 157px;
 }
 .icon-left{
   width: 50%;
@@ -51,7 +51,7 @@ nav {
 nav a {
   text-decoration:none;
   font-size: 16px;
-  margin: 0 60px;
+  margin: 0 40px;
   color:#FAA830;
 }
 

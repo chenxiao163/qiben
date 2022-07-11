@@ -5,26 +5,28 @@ html{
   position: relative;
 }
 .title-img{
-  min-width: 842px;
-  min-height: 147px;
   position: absolute;
   top: 150px;
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
 } 
+.title-img img {
+  width: 548px;
+  height: 140px;
+}
 .changeGo{
   min-width: none;
   min-height: none;
   position: absolute;
-  top: 458px;
+  top: 310px;
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
 }
 .changeGo img{
-  width: 180px;
-  height: 55px;
+  width: 114px;
+  height: 37x;
   min-width: 150px;
   min-height: 54px;
 }
@@ -113,10 +115,14 @@ html{
     transform: translate(-50%);
     z-index: 20;
   }
+  .go img {
+    width: 939px;
+    height: 221px;
+  }
   .change-close{
     position: absolute;
     top: 240px;
-    right: 180px;
+    right: 280px;
     z-index: 20;
   }
   .change-close img{
@@ -144,107 +150,116 @@ html{
   }
   .mian-box-list .list{
     color: #FAA830;
-    width: 210px;
-    height: 60px;
+    width: 208px;
+    height: 45px;
     margin: 10px 15px;
     text-align: center;
-    line-height: 60px;
+    line-height: 45px;
     border:1px solid #FAA830;
     font-size: 12px;
   }
   .more{
     z-index: 10;
-    width: 80%;
-    height: 415px;
+    width: 968px;
+    height: 408px;
     background:rgba(255, 255, 255, 0.9)!important;
     position: fixed;
     top: 300px;
-    left: 60%;
+    left: 50%;
     transform: translate(-50%);
   }
   .more-box-title{
     font-size: 32px;
     color: #FAA830;
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%);
   }
-  .mero-left{
+f  .mero-left{
     width: 50%;
     float: left;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
   }
+    .mero-left img{
+      width: 376px;
+      height: 222px;
+      position: absolute;
+      top: 90px;
+      left: 25%;
+      transform: translate(-50%);
+    }
   .mero-right{
     width: 50%;
     float: right;
   }
-  .type-list-top-left{
+  /* .type-list-top-left{
     border: 2px solid #FAA830;
     border-radius: 50%;
-    height: 130px;
-    width: 130px;
+    height: 120px;
+    width: 120px;
     position: absolute;
     top: 100px;
     left: 180px;
     text-align: center;
-    line-height: 130px;
+    line-height: 120px;
     color: #FAA830;
     font-size: 20px;
   }
   .type-list-top-right{
     border: 2px solid #FAA830;
     border-radius: 50%;
-    height: 130px;
-    width: 130px;
+    height: 120px;
+    width: 120px;
     position: absolute;
     top: 100px;
     left: 330px;
     text-align: center;
-    line-height: 130px;
+    line-height: 120px;
     color: #FAA830;
-    font-size: 24px;
+    font-size: 20px;
   }
   .type-list-bm-left{
     border: 2px solid #FAA830;
     border-radius: 50%;
-    height: 130px;
-    width: 130px;
+    height: 120px;
+    width: 120px;
     position: absolute;
     top: 250px;
     left: 100px;
     text-align: center;
-    line-height: 130px;
+    line-height: 120px;
     color: #FAA830;
-    font-size: 24px;
+    font-size: 20px;
   }
   .type-list-bm-cn{
     border: 2px solid #FAA830;
     border-radius: 50%;
-    height: 130px;
-    width: 130px;
+    height: 120px;
+    width: 120px;
     position: absolute;
     top: 250px;
     left: 250px;
     text-align: center;
-    line-height: 130px;
+    line-height: 120px;
     color: #FAA830;
-    font-size: 24px;
+    font-size: 20px;
   }
   .type-list-bm-right{
     border: 2px solid #FAA830;
     border-radius: 50%;
-    height: 130px;
-    width: 130px;
+    height: 120px;
+    width: 120px;
     position: absolute;
     top: 250px;
     left: 400px;
     text-align: center;
-    line-height: 130px;
+    line-height: 120px;
     color: #FAA830;
-    font-size: 24px;
-  }
+    font-size: 20px;
+  } */
   .mero-right-box{
     width: 300px;
     height: 300px;
@@ -254,24 +269,24 @@ html{
     color: #FAA830;
   }
   .mero-right-list-title{
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
   .mero-right-list{
     margin-top: 10px;
   }
   .block{
-    height: 570px;
+    height: 324px;
   }
   .el-carousel__item{
     width: 100%;
-    height: 570px;
+    height: 324px;
   }
 </style>
 <template>
   <div class="Home">
     <div class="block" style="margin-top:-30px;">
-    <el-carousel height="570px">
+    <el-carousel height="324px">
       <el-carousel-item v-for="(item,index) in typeOpiton" :key="index">
         <img :src="item.img" style="height: 100%;width:100%;" alt="">
       </el-carousel-item>
@@ -343,7 +358,8 @@ html{
         {{moreTitle}}
       </div>
       <div class="mero-left">
-        <div class="type-list-top-left">
+        <img src="../assets/home/mero-left.png" alt="">
+        <!-- <div class="type-list-top-left">
           竞争激烈
         </div>
          <div class="type-list-top-right">
@@ -357,7 +373,7 @@ html{
         </div>
         <div class="type-list-bm-right">
           能力不足
-        </div>
+        </div> -->
       </div>
       <div class="mero-right">
         <div class="mero-right-box">

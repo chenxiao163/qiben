@@ -50,8 +50,8 @@
   width: 80%;
   min-width: 80%;
   height: 400px;
-  position: absolute;
-  top: 30%;
+  position: fixed;
+  bottom: 50px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -89,10 +89,14 @@
     transform: translate(-50%);
     z-index: 20;
   }
+  .go img {
+    width: 939px;
+    height: 221px;
+  }.
   .change-close{
     position: absolute;
     top: 240px;
-    right: 180px;
+    right: 280px;
     z-index: 20;
   }
   .change-close img{
@@ -100,7 +104,7 @@
     height: 30px;
   }
   .main-box-title{
-    font-size:32px;
+    font-size: 32px;
     color: #FAA830;
     position: absolute;
     top: 50px;
@@ -120,11 +124,11 @@
   }
   .mian-box-list .list{
     color: #FAA830;
-    width: 210px;
-    height: 60px;
+    width: 208px;
+    height: 45px;
     margin: 10px 15px;
     text-align: center;
-    line-height: 60px;
+    line-height: 45px;
     border:1px solid #FAA830;
     font-size: 12px;
   }
