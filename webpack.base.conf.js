@@ -91,4 +91,5 @@ module.exports = {
     child_process: 'empty'
   },
   // 配置全局使用 jquery
+  
 }

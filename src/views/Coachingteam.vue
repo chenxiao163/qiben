@@ -1,5 +1,25 @@
+<style>
+  .Coachingteam{
+    width: 100%;
+    height: 88vh;
+    position: relative;
+  }
+  .Coachingteam-title{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .Coachingteam-title img {
+    width: 381px;
+    height: 40px;
+  }
+</style>
 <template>
-<div >
+<div class="Coachingteam">
+    <div class="Coachingteam-title">
+      <img src="../assets/Coachingteam/辅导团队.png" alt="">
+    </div>
     <iframe  v-if="iframeShow" style="width: 100vw;height: 100vh;margin-top:-30px;" src="/banner.html" frameborder="0"></iframe>
 </div>
 
@@ -34,5 +54,3 @@ export default {
 };
 </script>
 
-<style>
-</style>

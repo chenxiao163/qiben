@@ -1,9 +1,8 @@
 <style>
   .Aboutus{
     width: 100%;
-    height: 80%;
     position: relative;
-    font-family:"Microsoft YaHei",
+    font-family:"Microsoft YaHei";
   }
   .aboutus-title{
     position: absolute;
@@ -43,10 +42,14 @@
     margin-top: 60px;
     font-family:"Microsoft YaHei"
   }
+  .AboutusImg{
+    width: 100%;
+    height: 88vh;
+  }
 </style>
 <template>
   <div class="Aboutus">
-    <img src="../assets/Aboutus/关于我们-bg.png" style="margin-top:-30px" alt="">
+    <img src="../assets/Aboutus/关于我们-bg.png" class="AboutusImg" style="margin-top:-30px" alt="">
     <div class="aboutus-main">
       <div class="aboutus-title">
         <img src="../assets/Aboutus/me-title.png" alt="">

@@ -20,6 +20,9 @@
 </template>
 
 <style>
+#app{
+  height: 80vh;
+}
 *{
   margin: 0;
   padding: 0;

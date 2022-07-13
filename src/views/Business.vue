@@ -3,47 +3,10 @@
   position: relative;
   top: -30px;
   width: 100%;
-  height: 100vh;
-  display:flex;
-  justify-content:center;
+  height: 91vh;
   background-color: #FAA830;
 }
-.Business-list{
-  position: relative;
-  top: 300px;
-  width: 180px;
-  height: 80px;
-  display: inline-block;
-}
-.Business-list img{
-  width:80px;
-  height: 80px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.title-list{
-  font-size: 18px;
-  color: #fff;
-}
-.Business-list .title-list{
-  position: absolute;
-  top: 200px;
-  left: 60%;
-  transform: translate(-50%);
-  width: 200px;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  margin: -115px 0px;
-}
 
-.Business-list .title-list div{
-  width: 150px;
-  margin-top: 20px;
-  margin-right: 50px;
-}
 .main-box{
   background:rgba(255, 255, 255, 0.9)!important;
   z-index: 10;
@@ -92,7 +55,7 @@
   .go img {
     width: 939px;
     height: 221px;
-  }.
+  }
   .change-close{
     position: absolute;
     top: 240px;
@@ -112,7 +75,8 @@
     transform: translate(-50%);
   }
   .mian-box-list{
-    width: 85%;
+    min-width: 85%;
+    max-width: 64px;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -132,16 +96,84 @@
     border:1px solid #FAA830;
     font-size: 12px;
   }
+  .Business-list{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+
+}
+  .title-list{
+    width: 20%;
+    height: 200px;
+  }
+  .imglist{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+  }
+  .imglist img {
+    width: 80px;
+    height: 80px;
+  }
+  .list{
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+  }
+    .xinlimain-box{
+    background:rgba(255, 255, 255, 0.9)!important;
+    z-index: 10;
+    width: 80%;
+    min-width: 80%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+  .xinlimian-box-list{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+    color: #fff;
+  }
+  .xinlimian-box-list .xinlilist{
+    color: #FAA830;
+    width: 29%;
+    height: 45px;
+    margin: 10px 15px;
+    text-align: center;
+    line-height: 45px;
+    border:1px solid #FAA830;
+    font-size: 12px;
+  }
+
 </style>
 <template>
   <div class="Business">
-    <div class="Business-main">
-          <div class="Business-body">
-      <div @click="aaa(item)" class="Business-list" v-for="item,index in businessList" :key="index">
-          <img :src="item.img" alt="" >
-          <div class="title-list">
-            <div style="font-size:20px">{{item.data}}</div>
-            <div>{{item.title}}</div>
+     <div class="Business-body">
+      <div class="Business-list">
+          <div class="title-list"  @click="aaa(item)"  v-for="item,index in businessList" :key="index">
+            <div class="imglist">
+              <img :src="item.img" alt="" >
+            </div>
+            <div class="list">
+              <div class="list-top" style="font-size:20px">{{item.data}}</div>
+              <div>{{item.title}}</div>
+            </div>
+            <!--  <img :src="item.img" alt="" > -->
+            <!-- <div style="font-size:20px">{{item.data}}{{item.title}}</div> -->
+            <!-- <div>{{item.title}}</div> -->
         </div>
       </div>
     </div>
@@ -179,8 +211,27 @@
         <img src="../assets/home/关闭.png" alt="">
       </div>
     </div>
-    </div>
+    <div class="xinlimain-box" v-show="xinliShow">
+      <div class="main-box-title">
+        {{xinlilistTitle}}
+      </div>
+      <div class="xinlimian-box-list" style="">
+          <div v-if="xinlilist1" class="xinlilist">
+          {{xinlilist1}}
+        </div>
+        <div v-if="xinlilist2" class="xinlilist">
+          {{xinlilist2}}
+        </div>
+        <div v-if="xinlilist3" class="xinlilist">
+          {{xinlilist3}}
+        </div>
+        
 
+      </div>
+      <div class="close"  @click="xinliShow=false">
+        <img src="../assets/home/关闭.png" alt="">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -247,28 +298,44 @@ export default {
             list4:"求职流程解析",
             title:"Job Serch Planning Guidanc"
           },
-          // {
-          //   img:require('../assets/home/more.png'),
-          //   data:'更多信息咨询',
-          //   listimg:require('../assets/home/morelist.png'),
-          // },
-        ]
+        ],
+        xinlilist1:null,
+        xinlilist2:null,
+        xinlilist3:null,
+        xinlilistTitle:null,
+        xinliShow:false
       }
     },
     methods: {
       aaa(item){
-        this.mainShow = true
-        this.listimg = item.listimg
-        this.listTitle = item.data
-        this.list1 = item.list1
-        this.list2 = item.list2
-        this.list3 = item.list3
-        this.list4 = item.list4
-        this.list5 = item.list5
-        this.list6 = item.list6
-        this.list7 = item.list7
-        this.list8 = item.list8
- 
+        if(item.data === "心里健康咨询"){
+          this.xinliShow =true
+          this.xinlilistTitle = item.data
+          this.xinlilist1 = item.list1
+          console.log(this.xinlilist1);
+          this.xinlilist2 = item.list2
+          this.xinlilist3 = item.list3
+        }else{
+          this.mainShow = true
+          this.listimg = item.listimg
+          this.listTitle = item.data
+          this.list1 = item.list1
+          this.list2 = item.list2
+          this.list3 = item.list3
+          this.list4 = item.list4
+          this.list5 = item.list5
+          this.list6 = item.list6
+          this.list7 = item.list7
+          this.list8 = item.list8
+
+          if(item.data === '更多信息咨询'){
+            this.mainShow = false
+            console.log(111);
+            this.moreShow = true
+            this.moreTitle = item.data
+          }
+        }
+        
       },
        change(){
         this.changeGoShow = true

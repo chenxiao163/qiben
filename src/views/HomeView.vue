@@ -38,7 +38,7 @@ html{
 }
 .footer{
   background-color:#FAA830;
-  min-height: 400px;
+  min-height: 415px;
   min-width: 100%;
   position: relative;
 }
@@ -85,6 +85,7 @@ html{
   width: 80%;
   position: absolute;
 }
+
 .close{
   width: 50%;
 }
@@ -119,10 +120,11 @@ html{
     width: 939px;
     height: 221px;
   }
+
   .change-close{
     position: absolute;
     top: 240px;
-    right: 280px;
+    right: 20%;
     z-index: 20;
   }
   .change-close img{
@@ -138,7 +140,49 @@ html{
     transform: translate(-50%);
   }
   .mian-box-list{
-    width: 85%;
+    /* width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+    color: #fff; */
+    width: 970px;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+    color: #fff;
+  }
+  .mian-box-list .list{
+    color: #FAA830;
+    width: 208px;
+    height: 45px;
+    margin: 10px 15px;
+    text-align: center;
+    line-height: 45px;
+    border:1px solid #FAA830;
+    font-size: 12px;
+  }
+  .xinlimain-box{
+    background:rgba(255, 255, 255, 0.9)!important;
+    z-index: 10;
+    width: 80%;
+    min-width: 80%;
+    height: 400px;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+  .xinlimian-box-list{
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -148,7 +192,7 @@ html{
     font-size: 18px;
     color: #fff;
   }
-  .mian-box-list .list{
+  .xinlimian-box-list .xinlilist{
     color: #FAA830;
     width: 208px;
     height: 45px;
@@ -298,7 +342,7 @@ f  .mero-left{
     <div class="changeGo" @click="change">
       <img src="../assets/home/button.png" alt="">
     </div>
-    <div v-show="changeGoShow">
+    <div v-show="changeGoShow" class="goimg">
       <div class="go">
         <img src="../assets/home/前往咨询.png" alt="">
       </div>
@@ -350,6 +394,27 @@ f  .mero-left{
         </div>
       </div>
       <div class="close"  @click="mainShow=false">
+        <img src="../assets/home/关闭.png" alt="">
+      </div>
+    </div>
+    <div class="xinlimain-box" v-show="xinliShow">
+      <div class="main-box-title">
+        {{xinlilistTitle}}
+      </div>
+      <div class="xinlimian-box-list" style="">
+          <div v-if="xinlilist1" class="xinlilist">
+          {{xinlilist1}}
+        </div>
+        <div v-if="xinlilist2" class="xinlilist">
+          {{xinlilist2}}
+        </div>
+        <div v-if="xinlilist3" class="xinlilist">
+          {{xinlilist3}}
+        </div>
+        
+
+      </div>
+      <div class="close"  @click="xinliShow=false">
         <img src="../assets/home/关闭.png" alt="">
       </div>
     </div>
@@ -467,6 +532,10 @@ export default {
         list6:null,
         list7:null,
         list8:null,
+        xinlilist1:null,
+        xinlilist2:null,
+        xinlilist3:null,
+        xinlilistTitle:null,
         typeOpiton:[
           {
             img:require('../assets/home/bg-1.png')
@@ -479,29 +548,40 @@ export default {
           },
         ],
         changeGoShow:false,
-        moreTitle:null
+        moreTitle:null,
+        xinliShow:false
       }
     },
     methods: {
       aaa(item){
-        console.log(item);
-        this.mainShow = true
-        this.listimg = item.listimg
-        this.listTitle = item.data
-        this.list1 = item.list1
-        this.list2 = item.list2
-        this.list3 = item.list3
-        this.list4 = item.list4
-        this.list5 = item.list5
-        this.list6 = item.list6
-        this.list7 = item.list7
-        this.list8 = item.list8
-        if(item.data === '更多信息咨询'){
-          this.mainShow = false
-          console.log(111);
-          this.moreShow = true
-          this.moreTitle = item.data
+        if(item.data === "心里健康咨询"){
+          this.xinliShow =true
+          this.xinlilistTitle = item.data
+          this.xinlilist1 = item.list1
+          console.log(this.xinlilist1);
+          this.xinlilist2 = item.list2
+          this.xinlilist3 = item.list3
+        }else{
+          this.mainShow = true
+          this.listimg = item.listimg
+          this.listTitle = item.data
+          this.list1 = item.list1
+          this.list2 = item.list2
+          this.list3 = item.list3
+          this.list4 = item.list4
+          this.list5 = item.list5
+          this.list6 = item.list6
+          this.list7 = item.list7
+          this.list8 = item.list8
+
+          if(item.data === '更多信息咨询'){
+            this.mainShow = false
+            console.log(111);
+            this.moreShow = true
+            this.moreTitle = item.data
+          }
         }
+        
       },
       change(){
         this.changeGoShow = true

@@ -1,9 +1,14 @@
+html{
+	width: 100%;
+}
 body{
-	background:#F90;
+	background:#FAA830;
 }
 .examples{
 	width:100%;
-	padding-top:50px;
+	position: relative;
+	top: 200px;
+	left: 0;
 }
 .carousel.flexible .items {
 	display: none;
