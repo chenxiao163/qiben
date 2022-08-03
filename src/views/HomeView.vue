@@ -326,6 +326,30 @@ f  .mero-left{
     width: 100%;
     height: 324px;
   }
+  .bottom{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: #9999;
+  }
+  .bu_mian{
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .belist{
+    /* margin-top: 20px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .list{
+    width: 300px;
+  }
 </style>
 <template>
   <div class="Home">
@@ -361,6 +385,20 @@ f  .mero-left{
             <div style="margin:10px -20px">{{item.data}}</div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="bu_mian">
+        <div class="belist" @click="gobeian">
+          <div class="icon">
+
+          </div>
+          <div class="list">
+            <span>网站备案号:</span>
+            <span>沪ICP备2022019886号-1</span>
+          </div>
+        </div>
+        
       </div>
     </div>
     <div class="main-box" v-show="mainShow">
@@ -585,6 +623,9 @@ export default {
       },
       change(){
         this.changeGoShow = true
+      },
+      gobeian(){
+        window.location.href='https://beian.miit.gov.cn';
       }
     }
   }
